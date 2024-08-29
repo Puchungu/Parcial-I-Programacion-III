@@ -6,5 +6,7 @@ Integrantes del parcial I:
 1- Nelson Oswaldo Alvarenga Cuadra SMSS127921
 <br>
 2- Daniel Josue Joya Majano SMSS035723
+<br>
+Facultad de Ciencia y Tecnologia 
 
 
