@@ -1,4 +1,4 @@
-class Consultorio: #clase perro con su contructor y funcion de mostrar info
+class Consultorio: #clase Cosultorio con su contructor y funcion de mostrar info
     def __init__(self, nombre, edad, direccion, peso,fecha):
         self.nombre = nombre
         self.edad = edad
@@ -19,7 +19,7 @@ class Consultorio: #clase perro con su contructor y funcion de mostrar info
 
 def ingresar_datos():  # Función para hacer los inputs del usuario 
     nombre = input("Ingrese el nombre: ")
-    for paciente in pacientes:
+    for paciente in pacientes: #for para determinar si el paciente ya existe 
         if paciente.nombre == nombre:
             paciente.estado = "Sala de espera"
             print("Usted ya tiene una consulta previa. Por favor, espere en la sala de espera.")
@@ -32,7 +32,7 @@ def ingresar_datos():  # Función para hacer los inputs del usuario
     pacientes.append(nuevo_paciente)
     return nuevo_paciente 
 
-def mostrar_paciente(): #funcion para mostrar los usuarios que han prestado libros que estan en la lista global 
+def mostrar_paciente(): #funcion para mostrar los pacientes
     print("\nPaciente registrado:")
     for paciente in pacientes:
         paciente.mostrar_info()
@@ -60,3 +60,7 @@ pacientes = []
 
 # Ejecutar el menú principal
 menu_principal()
+
+"""
+Se soluciona pidiendo al paciente primeramente el inicial ya que no tenemos ninguno, ahora que tenemos uno al ingresar uno nuevo comparamos el nombre del paciente que esta guardado en la lista con el nuevo nombre que estamos ingresando si estos coinciden pues se pasa al paciente a sala de espera y se actualiza el estado 
+"""
