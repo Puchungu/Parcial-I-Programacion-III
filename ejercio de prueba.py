@@ -1,1 +1,0 @@
-print("saque mala nota en el parcial")
